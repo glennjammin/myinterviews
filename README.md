@@ -1,6 +1,6 @@
-# Dish Digital RS-Cloud Team Interview Stuff
+# Team Interview Stuff
 
-Hi - this is a prebuilt homework assignment used in RS-Cloud team interviews. It
+Hi - this is a prebuilt homework assignment used in team interviews. It
 provides a mini-django app contained in one file called tv.py that deals with tv
 channels and shows.
 
@@ -20,9 +20,9 @@ management command called load_channels as follows:
 
         $ ./tv.py load_channels
 
-This will perform an http request against a Dish Digital content management
-system (cms) server and get a list of available channels, and will then create
-django model instances and save them to the database.
+This will perform an http request against a content management system (cms)
+server and get a list of available channels, and will then create django model
+instances and save them to the database.
 
 You can run the django server with the following:
 
