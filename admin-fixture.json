@@ -1,0 +1,17 @@
+[
+    {
+        "pk": 2,
+        "model": "auth.user",
+        "fields": {
+            "username": "admin",
+            "first_name": "",
+            "last_name": "",
+            "is_active": true,
+            "is_superuser": true,
+            "is_staff": true,
+            "groups": [],
+            "user_permissions": [],
+            "password": "sha1$3baff$72a0e68bed0f8949afb4294053871366f0bda31f"
+        }
+    }
+]
