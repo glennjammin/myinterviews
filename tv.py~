@@ -176,6 +176,13 @@ class ShowCurrentShows(BaseCommand):
 - run your new management command to load the shows
 - verify the shows exist by using the ./tv.py runserver command to view the channels and shows. 
 """
+class PrintCurrentShows(BaseCommand):
+   
+    def handle(self, ch, **options):
+        #newShows = []
+        json = json.load(get_shows(ch))
+        for show in json:
+            print "ch: %s value: %s" % (ch, show["scheduleList"])
             
 class LoadCurrentShows(BaseCommand):
 
@@ -222,6 +229,7 @@ if __name__=='__main__':
 
     commands = get_commands()
     commands["load_channels"] = LoadTvChannels()
+    commands["print_shows"] = ShowCurrentShows()
     commands["print_cur_shows"] = PrintCurrentShows()
     commands["load_shows"] = LoadCurrentShows()
     #commands["load_all_shows] = LoadAllCurrentShows()
